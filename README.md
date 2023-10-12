@@ -2,7 +2,7 @@
 
 This Git repository contains a cloned version of the Timezone website, based on the [Colorlib Timezone template](https://colorlib.com/wp/template/timezone/).
 
-![Timezone Website Preview](assets/img/screenshot.jpg)
+![Timezone Website Preview](assets/img/Screenshot.jpg)
 
 ## Description
 
