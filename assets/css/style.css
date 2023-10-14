@@ -99,14 +99,40 @@ nav label,nav input{
   nav{
     padding: 25px 20px;
   }
-  nav .list {
+  nav label{
+    display: block;
+    order: 1;
+   
+  }
+  nav label i{
+    color:#ff2020;
+    font-size: 23px;
+    cursor: pointer;
+  }
+  nav .list{
+    position: absolute;
+    background-color: pink;
+    top:78px;
+    left:20px;
+    width:88vw;
+    padding:20px 0;
+    opacity: 0;
+    transition: all 0.4s ease-in;
+  }
+  nav input:checked ~ .list {
+    opacity: 1;
+  }
+  nav .list .list-item{
+    display: block;
+    margin-bottom: 20px;
+  }
+  nav .list .list-item:nth-child(4)::after{
     display: none;
   }
   nav  .nav-icon a {
     margin-left: 15px;
+
   }
-  nav label{
-    display: block;
-    order: 1;
-  }
+
 }
+
