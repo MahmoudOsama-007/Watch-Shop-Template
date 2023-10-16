@@ -10,7 +10,6 @@
 body {
   font-family: "Josefin Sans", sans-serif;
   color: #141517;
-  background-color: aqua;
 }
 .container {
   width: 85%;
@@ -43,6 +42,13 @@ body {
 }
 .btn:hover::before {
   width: 100%;
+}
+
+@media(max-width:767px){
+  .row{
+    flex-flow: column wrap;
+    align-items: center;
+  }
 }
 /* ------NAV -------*/
 nav {
@@ -148,14 +154,17 @@ nav input {
     position: absolute;
     background-color: pink;
     top: 78px;
-    left: 20px;
-    width: 88vw;
+    left: 50%;
+    transform: translate(-50%);
+    width: 85vw;
     padding: 20px 0;
     opacity: 0;
+    visibility: hidden;
     transition: all 0.4s ease-in;
   }
   nav input:checked ~ .list {
     opacity: 1;
+    visibility: visible;
   }
   nav .list .list-item {
     display: block;
@@ -229,4 +238,60 @@ header img {
   header .header-content h2 {
     font-size: 40px;
   }
+}
+
+/*---------Arrivals Section-----------*/
+
+.arrivals{
+padding: 100px 0 70px;
+}
+.arrivals h2{
+  font-size: 45px;
+  font-weight: 700;
+  margin-bottom: 60px;
+}
+.arrivals .item{
+  margin-bottom: 20px;
+}
+.arrivals .item .img-item{
+  margin-bottom: 30px;
+  overflow: hidden;
+}
+.arrivals .item .img-item img{
+  transition: all 0.4s ease-in;
+  
+}
+.arrivals .item:hover img {
+  transform: scale(1.1);
+}
+.arrivals .item .item-details{
+  text-align: center;
+}
+.arrivals .item .item-details a{
+   text-decoration: none;
+  color: #444;
+}
+.arrivals .item .item-details a h3{
+  margin-bottom: 20px;
+  font-size: 22px;
+}
+.arrivals .item .item-details p{
+ color:#ff2020;
+}
+/* look how make media for specific part */
+@media(max-width:1300px){
+  
+  .arrivals .item{
+    width: 30%;
+  }
+
+}
+@media(max-width:991px){
+  .arrivals .row{
+    flex-flow: row wrap;
+  }
+  .arrivals .item{
+    width: 48%;
+  }
+
 }
