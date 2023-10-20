@@ -11,6 +11,9 @@ body {
   font-family: "Josefin Sans", sans-serif;
   color: #141517;
 }
+a {
+  text-decoration: none;
+}
 .container {
   width: 85%;
   margin: auto;
@@ -29,6 +32,12 @@ body {
   position: relative;
   z-index: 1;
 }
+.btn1{
+  background-color: #ff2020;
+}
+.btn:hover {
+  cursor: pointer;
+}
 .btn::before {
   content: "";
   position: absolute;
@@ -40,10 +49,15 @@ body {
   z-index: -1;
   transition: all 0.5s ease-in;
 }
+.btn1::before{
+  background-color: #333;
+}
 .btn:hover::before {
   width: 100%;
 }
-
+.margin-top70{
+  margin-top: 70px;
+}
 
 /* ------NAV -------*/
 nav {
@@ -273,7 +287,6 @@ header img {
 }
 /* look how make media for specific part */
 
-
 @media (min-width: 1300px) {
   .arrivals .item {
     width: 30%;
@@ -294,64 +307,129 @@ header img {
   }
 }
 
-
-/*---------grid Section-----------*/
-.gallery-area  {
+/*---------gallery Section-----------*/
+.gallery-area {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  grid-template-rows: repeat(2,minmax(100px,1fr));
+  grid-template-rows: repeat(2, minmax(100px, 1fr));
   gap: 30px;
 }
-.gallery-area .item{
+.gallery-area .item {
   background-color: pink;
   overflow: hidden;
   color: #fff;
 }
-.gallery-area  .item img{
+.gallery-area .item img {
   height: 100%;
   width: 100%;
   transition: all 0.5s ease-in;
   scale: 1.1;
 }
-.gallery-area  .item:hover  img{
+.gallery-area .item:hover img {
   filter: grayscale(60%);
-  scale:1;
+  scale: 1;
 }
 .gallery-area .item:nth-child(1) {
   grid-column: 1/3;
-  grid-row:1/3;
+  grid-row: 1/3;
 }
 .gallery-area .item:nth-child(2) {
-  grid-row:1/3;
+  grid-row: 1/3;
 }
-@media (min-width: 768px) and (max-width:990px)
-{
-  .gallery-area  {
+@media (min-width: 768px) and (max-width: 990px) {
+  .gallery-area {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(2,minmax(330px,1fr));
+    grid-template-rows: repeat(2, minmax(330px, 1fr));
     gap: 30px;
   }
   .gallery-area .item:nth-child(1) {
     grid-column: unset;
-    grid-row:unset;
+    grid-row: unset;
   }
   .gallery-area .item:nth-child(2) {
-    grid-row:unset;
+    grid-row: unset;
   }
 }
-@media (max-width: 768px)
-{
-  .gallery-area  {
+@media (max-width: 768px) {
+  .gallery-area {
     grid-template-columns: 1fr;
-    grid-template-rows: repeat(4,minmax(330px,auto));
+    grid-template-rows: repeat(4, minmax(330px, auto));
     gap: 30px;
   }
   .gallery-area .item:nth-child(1) {
     grid-column: unset;
-    grid-row:unset;
+    grid-row: unset;
   }
   .gallery-area .item:nth-child(2) {
-    grid-row:unset;
+    grid-row: unset;
   }
+}
+/*--------- Popular Section-----------*/
+.popular {
+  padding: 200px 0 170px;
+  text-align: center;
+}
+.popular .row{
+  flex-wrap: wrap;
+}
+
+.popular .popular-title h2 {
+  font-size: 48px;
+  margin-bottom: 20px;
+}
+.popular .popular-title p {
+  width: 50%;
+  margin: auto;
+  line-height: 1.6;
+}
+.popular .popular-items .item {
+  position: relative;
+  margin-bottom: 50px;
+}
+.popular .popular-items .item-img {
+  border-bottom: 3px solid #ff2020;
+  margin-bottom: 19px;
+  position: relative;
+  overflow: hidden;
+}
+.popular .popular-items .item-img .addCart {
+  position: absolute;
+  bottom: -70px;
+  left: 0;
+  background-color: #ff2020;
+  color: white;
+  width: 100%;
+  font-size: 20px;
+  padding: 20px;
+  transition: all 0.3s ease-in;
+  opacity: 0;
+}
+.popular .popular-items .item:hover .addCart {
+  bottom: 0;
+  opacity: 1;
+}
+.popular-items .item .item-content > a {
+  color: #444444;
+  font-weight: 700;
+  font-size: 24px;
+}
+.popular-items .item .item-content p {
+  margin-top: 20px;
+  font-size: 20px;
+}
+.popular-items .item i {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  color: #333333;
+  font-size: 30px;
+  cursor: pointer;
+  visibility: hidden;
+  opacity: 0;
+  transition: all 0.4s ease-in;
+}
+.popular-items .item:hover i{
+  visibility: visible;
+  opacity: 1;
 }
