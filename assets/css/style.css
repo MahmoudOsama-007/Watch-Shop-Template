@@ -529,3 +529,46 @@ header img {
     flex-flow: row nowrap;
   }
 }
+/*--------- watch Section-----------*/
+.watch{
+  padding: 130px 0;
+}
+.watch .row{
+  align-items: center;
+}
+.watch .row:nth-child(1){
+  padding-bottom: 130px;
+}
+.watch .content-watch{
+  width:43%;
+  padding: 0 25px;
+}
+.watch .content-watch h2{
+font-size: 55px;
+margin-bottom: 40px;
+font-weight: 700;
+}
+.watch .content-watch p{
+font-size: 17px;
+color:#777;
+line-height: 1.5;
+margin-bottom: 50px;
+}
+.watch .img-watch{
+  width:46%;
+}
+.watch .img-watch img{
+  width: 100%;
+ 
+}
+@media (max-width:767px){
+  
+  .watch .content-watch,.watch .img-watch{
+    width: 100%;
+    
+  }
+  .watch .content-watch{
+     margin-bottom: 60px; 
+  }
+
+}
