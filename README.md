@@ -1,6 +1,7 @@
 # Timezone - Website Clone
 
-This Git repository contains a cloned version of the Timezone website, based on the [Colorlib Timezone template](https://colorlib.com/wp/template/timezone/)./n
+This Git repository contains a cloned version of the Timezone website, based on the [Colorlib Timezone template](https://colorlib.com/wp/template/timezone/).
+
 [Demo](https://mahmoudosama-007.github.io/Watch-Shop-Template/)
 
 ![Timezone Website Preview](assets/img/Screenshot.jpg)
