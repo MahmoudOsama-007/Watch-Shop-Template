@@ -32,7 +32,7 @@ a {
   position: relative;
   z-index: 1;
 }
-.btn1{
+.btn1 {
   background-color: #ff2020;
 }
 .btn:hover {
@@ -49,13 +49,13 @@ a {
   z-index: -1;
   transition: all 0.5s ease-in;
 }
-.btn1::before{
+.btn1::before {
   background-color: #333;
 }
 .btn:hover::before {
   width: 100%;
 }
-.margin-top70{
+.margin-top70 {
   margin-top: 70px;
 }
 
@@ -377,7 +377,7 @@ header img {
   padding: 200px 0 170px;
   text-align: center;
 }
-.popular .row{
+.popular .row {
   flex-wrap: wrap;
 }
 
@@ -436,175 +436,226 @@ header img {
   opacity: 0;
   transition: all 0.4s ease-in;
 }
-.popular-items .item:hover i{
+.popular-items .item:hover i {
   visibility: visible;
   opacity: 1;
 }
-@media(min-width:760px) and (max-width:993px){
-  .popular-items .item{
-    width:48%;
+@media (min-width: 760px) and (max-width: 993px) {
+  .popular-items .item {
+    width: 48%;
   }
 }
 
 /*--------- Video Section-----------*/
-.bg-video{
+.bg-video {
   background-image: url(/assets/img/bg/sectin_bg1.png);
   width: 100%;
   height: 700px;
   position: relative;
   background-size: cover;
 }
-.bg-video::before{
+.bg-video::before {
   content: "";
   position: absolute;
-  top:0;
+  top: 0;
   right: 0;
   bottom: 0;
   left: 0;
   transition: all 0.4s ease-in;
 }
-.bg-video:hover::before{
-  background-color: rgba(2,5,12,0.5);
+.bg-video:hover::before {
+  background-color: rgba(2, 5, 12, 0.5);
 }
-.bg-video .play{
+.bg-video .play {
   position: absolute;
-  top:50%;
+  top: 50%;
   left: 50%;
-  transform: translate(-50%,-50%);
+  transform: translate(-50%, -50%);
 }
-.bg-video .play a{
+.bg-video .play a {
   width: 85px;
   height: 85px;
   border-radius: 50%;
   display: inline-block;
   transition: all 0.4s ease-in;
-   border: 2px solid #fff;
-   display: inline-block;
-    line-height: 88px;
-    text-align: center;
-    color:#fff;
-    
+  border: 2px solid #fff;
+  display: inline-block;
+  line-height: 88px;
+  text-align: center;
+  color: #fff;
 }
-.bg-video:hover .play a{
+.bg-video:hover .play a {
   transform: scale(1.1);
 }
 .bg-video .play a:hover {
-  color:red;
+  color: red;
   background-color: #fff;
 }
-.bg-video .play i{
+.bg-video .play i {
   font-size: 25px;
 }
-.bg-video .next-video{
+.bg-video .next-video {
   width: 25%;
   padding: 40px 60px;
   background-color: #ff2020;
-  color:#fff;
+  color: #fff;
   font-size: 25px;
   position: absolute;
   bottom: 0;
 }
-.bg-video .next-video i{
-    color:#fff;
-    font-size: 22px;
+.bg-video .next-video i {
+  color: #fff;
+  font-size: 22px;
 }
-@media(max-width:1190px){
-  .bg-video{
+@media (max-width: 1190px) {
+  .bg-video {
     height: 400px;
   }
-  .bg-video .next-video{
+  .bg-video .next-video {
     padding: 29px 33px;
     width: 35%;
   }
 }
-@media(max-width:767px)  {
-  .bg-video{
+@media (max-width: 767px) {
+  .bg-video {
     background-position: bottom;
   }
-  .bg-video .next-video{
+  .bg-video .next-video {
     padding: 14px 24px;
     width: 62%;
   }
-  .bg-video .row{
+  .bg-video .row {
     flex-flow: row nowrap;
   }
 }
 /*--------- watch Section-----------*/
-.watch{
+.watch {
   padding: 130px 0;
 }
-.watch .row{
+.watch .row {
   align-items: center;
 }
-.watch .row:nth-child(1){
+.watch .row:nth-child(1) {
   padding-bottom: 130px;
 }
-.watch .content-watch{
-  width:43%;
+.watch .content-watch {
+  width: 43%;
   padding: 0 25px;
 }
-.watch .content-watch h2{
-font-size: 55px;
-margin-bottom: 40px;
-font-weight: 700;
+.watch .content-watch h2 {
+  font-size: 55px;
+  margin-bottom: 40px;
+  font-weight: 700;
 }
-.watch .content-watch p{
-font-size: 17px;
-color:#777;
-line-height: 1.5;
-margin-bottom: 50px;
+.watch .content-watch p {
+  font-size: 17px;
+  color: #777;
+  line-height: 1.5;
+  margin-bottom: 50px;
 }
-.watch .img-watch{
-  width:46%;
+.watch .img-watch {
+  width: 46%;
 }
-.watch .img-watch img{
+.watch .img-watch img {
   width: 100%;
- 
 }
-@media (max-width:767px){
-  
-  .watch .content-watch,.watch .img-watch{
+@media (max-width: 767px) {
+  .watch .content-watch,
+  .watch .img-watch {
     width: 100%;
-    
   }
-  .watch .content-watch{
-     margin-bottom: 60px; 
+  .watch .content-watch {
+    margin-bottom: 60px;
   }
-
 }
 /*--------- Shop Section-----------*/
-.bg-red{
-  background-color: #ff2020 ;
+.bg-red {
+  background-color: #ff2020;
 }
 
-.shop-method .row{
-  padding: 75px 38px;
+.shop-method .row {
+  padding: 50px 38px;
 }
-.shop-method .item{
+.shop-method .item {
   width: 28%;
   color: #fff;
 }
-.shop-method .item-icon i{
-font-size: 38px;
-margin-bottom: 20px;
+.shop-method .item-icon i {
+  font-size: 38px;
+  margin-bottom: 20px;
 }
-.shop-method .item h3{
+.shop-method .item h3 {
   font-size: 19px;
   margin-bottom: 20px;
 }
-.shop-method .item p{
+.shop-method .item p {
   line-height: 1.4;
   font-size: 16px;
-  color: #d3d1d1;}
-@media(max-width:767px){
-    .shop-method .item{
-      width: 100%;
-      margin-bottom: 50px;
-    }
-    .shop-method .item:nth-child(3){
-      margin-bottom: 0;
-    }
-    .shop-method .row{
-      padding: 40px 30px;
-    }
+  color: #d3d1d1;
+}
+@media (max-width: 767px) {
+  .shop-method .item {
+    width: 100%;
+    margin-bottom: 50px;
+  }
+  .shop-method .item:nth-child(3) {
+    margin-bottom: 0;
+  }
+  .shop-method .row {
+    padding: 40px 30px;
+  }
+}
+/*--------- Footer Section-----------*/
+footer .row {
+  padding-top: 150px;
+  padding-bottom: 120px;
+}
+footer .content-footer{
+  width:25%;
+}
+footer .content-footer .logo{
+  margin-bottom: 20px;
+}
+footer .content-footer p{
+  color: #868c98;
+    font-size: 16px;
+    line-height: 1.8;
+}
+footer .list-footer{
+  width: 22%;
+}
+footer .list-footer li{
+  list-style: none;
+  margin-bottom: 20px;
+  transition: all 0.2s ease-in;
+}
+footer .list-footer li:hover{
+  translate: 2.5%;
+  
+}
+footer .list-footer a{
+  color: #868c98;
+  
+}
+footer .list-footer li:hover a{
+  color:#ff2020;
+}
+footer .list-footer h3{
+  
+  margin-bottom: 25px;
+}
+@media (max-width:991px) {
+  footer .row{
+    flex-wrap: wrap;
+  }
+  footer .content-footer,footer .list-footer{
+   width: 40%;
+   margin-bottom: 25px;
+  }
+}
+@media (max-width:767px) {
+  footer .content-footer,footer .list-footer{
+   width: 100%;
+   margin-bottom: 25px;
+  }
 }
